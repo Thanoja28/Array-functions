@@ -40,3 +40,10 @@ const employeeSalary = employees.sort((a, b) => {
   }
 });
 console.table(employeeSalary);
+
+// https://en.wikipedia.org/wiki/List_of_areas_of_London - sorting cities in london
+
+const cities = document.querySelector('table tbody tr td');
+const links = Array.from(cities.querySelectorAll('a'));
+
+const en = links.map(link => link.textContent);
