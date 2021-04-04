@@ -62,3 +62,14 @@ const sortAlpha = persons.sort((firstone, nextone) => {
   console.log(sortAlpha);
 });
 
+// using reduce sum up each of the values in the object.
+const flowers = ["Jasmine", "Rose", "Lily", "Lotus", "Jasmine", "Rose", "Lily", "Lotus", "Jasmine", "Rose", "Lily", "Lotus", "Sun Flower", "Hibiscus", "Tulip", "Water Lily", "Sun Flower", "Hibiscus", "Tulip", "Water Lily"]
+const sum = flowers.reduce((obj, item) => {
+  if(!obj[item]) {
+    obj[item] = 0
+  }
+  obj[item]++;
+  return obj;
+  console.log(sum);
+}, {});
+
